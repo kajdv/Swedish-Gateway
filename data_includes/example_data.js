@@ -1,38 +1,6 @@
 var shuffleSequence = seq("consent","setcounter","intro");
-var practiceItemTypes = ["practice"];
+//var practiceItemTypes = ["practice"];
 
-
-
-
-var defaults = [
-    "Separator", {
-        transfer: 1000,
-        normalMessage: "Please wait for the next sentence.",
-        errorMessage: "Wrong. Please wait for the next sentence."
-    },
-    "DashedSentence", {
-        mode: "self-paced reading"
-    },
-    "AcceptabilityJudgment", {
-        as: ["1", "2", "3", "4", "5", "6", "7"],
-        presentAsScale: true,
-        instructions: "Use number keys or click boxes to answer.",
-        leftComment: "(Bad)", rightComment: "(Good)"
-    },
-    "Question", {
-        hasCorrect: true
-    },
-    "Message", {
-        hideProgressBar: true
-    },
-    "Form", {
-        hideProgressBar: true,
-        continueOnReturn: false,
-        saveReactionTime: true,
-    }
-];
-
-// NB needs edit as indicated below! 
 
 var items = [
 
@@ -60,7 +28,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Click here to begin the experiment!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_V2/experiment.html?source='+PennController.GetURLParameter("source"));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_V2/experiment.html'+PennController.GetURLParameter("source"));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -68,7 +36,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Click here to begin the experiment!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_SpAct/experiment.html?source='+PennController.GetURLParameter("source"));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_SpAct/experiment.html'+PennController.GetURLParameter("source"));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -76,7 +44,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Click here to begin the experiment!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_unm/experiment.html?source='+PennController.GetURLParameter("source"));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_unm/experiment.html'+PennController.GetURLParameter("source"));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -84,7 +52,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Click here to begin the experiment!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'spellout.net/ibexexps/KD/Sw_DF_AHbel/experiment.html?source='+PennController.GetURLParameter("source"));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'spellout.net/ibexexps/KD/Sw_DF_AHbel/experiment.html'+PennController.GetURLParameter("source"));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -92,7 +60,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Click here to begin the experiment!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_SpBel/experiment.html?source='+PennController.GetURLParameter("source"));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_SpBel/experiment.html'+PennController.GetURLParameter("source"));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -100,7 +68,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Click here to begin the experiment!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_DiscFam/experiment.html?source='+PennController.GetURLParameter("source"));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_DiscFam/experiment.html'+PennController.GetURLParameter("source"));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
