@@ -6,7 +6,7 @@ PennController.ResetPrefix(null);
 
 var items = [
 
-    ["setcounter", "__SetCounter__", { } ] 
+    ["setcounter", "__SetCounter__", { } ]
     ,    
  //   ["consent", "PennController", PennController(
  //       newHtml("consent", "ProlificConsent.html")
@@ -35,7 +35,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Klicka h&auml;r f&ouml;r att g&aring; vidare!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_V2/experiment.html?source='+PennController.GetURLParameter('source')+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_V2/experiment.html?source='+PennController.GetURLParameter('source')+'&id='+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -43,7 +43,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Klicka h&auml;r f&ouml;r att g&aring; vidare!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_SpAct/experiment.html?source='+PennController.GetURLParameter('source')+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_SpAct/experiment.html?source='+PennController.GetURLParameter('source')+'&id='+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -51,7 +51,7 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Klicka h&auml;r f&ouml;r att g&aring; vidare!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_unm/experiment.html?source='+PennController.GetURLParameter('source')+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_MCP_unm/experiment.html?source='+PennController.GetURLParameter('source')+'&id='+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -59,15 +59,15 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Klicka h&auml;r f&ouml;r att g&aring; vidare!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_AHbel/experiment.html?source='+PennController.GetURLParameter('source')+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_AHbel/experiment.html?source='+PennController.GetURLParameter('source')+'&id='+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
-    , 
+    ,
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Klicka h&auml;r f&ouml;r att g&aring; vidare!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_SpBel/experiment.html?source='+PennController.GetURLParameter('source')+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_SpBel/experiment.html?source='+PennController.GetURLParameter('source')+'&id='+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
@@ -75,9 +75,9 @@ var items = [
     [["intro", 1], "Form", {
         continueMessage: null,
         html:  "<a id='link'> Klicka h&auml;r f&ouml;r att g&aring; vidare!</a>"+
-               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_DiscFam/experiment.html?source='+PennController.GetURLParameter('source')+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
+               "<script>document.getElementById('link').setAttribute('href', 'http://spellout.net/ibexexps/KD/Sw_DF_DiscFam/experiment.html?source='+PennController.GetURLParameter('source')+'&id='+PennController.GetURLParameter('PROLIFIC_PID'));</script>"} ,
               "__SendResults__", {
       manualSendResults: true,  
     }]
-    ,     
+  
 ];
